@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body{
+    background-color: rgba(216, 112, 147, 0.897);
+}
+
+.content{
+    background-color: white;
+    width: 700px;
+    height: 50vh;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.contentTelaResultado, .teclado{
+    background-color: #BDFFE9;
+    width: 680px;
+    height: 10vh;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.telaResultado{
+    border: 1px solid #076445;
+    margin: 0;
+    height: 9vh;
+    width: 660px;
+    margin-top: 5px;
+    margin-left:10px;
+    border-radius: 10px;
+    position: relative;
+    color: #076445;
+}
+
+.areaCalculoEResultado{
+    margin-top: 29px;
+    border-radius: 10px;
+    height: 50px;
+    text-align: end;
+    font-size: 40px;
+    padding: 10px;
+    overflow: hidden;
+    text-overflow:ellipsis ;
+    white-space:nowrap;
+}
+
+span{
+    position: absolute;
+    right: 0;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #076445;
+    padding-right: 10px;
+    display: none;
+}
+
+.teclado{
+    height: 37vh;
+    margin-top: 12vh;
+}
+
+table{
+    width:680px;
+    height: 340px;
+    text-align: center;
+    padding: 10px;
+}
+
+ td{
+    border-radius: 10px;
+    width: 170px;
+    border: solid 1px #076445;
+ }
+
+button{
+    background-color:#BDFFE9;
+    width:160px;
+    height: 60px;
+    border-radius:10px;
+    color: #076445;
+}
+
+button:hover{
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #8bfcd6;
+}
