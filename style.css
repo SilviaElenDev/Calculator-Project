@@ -3,16 +3,22 @@
     padding: 0;
     margin: 0;
     border: 0;
+    
 }
 
 body{
-    background-color: rgba(216, 112, 147, 0.897);
+    background-color: #d87093e5;
+    height: 100vh;
+    background-image: url(/midia/CALC.png);
+    background-repeat:no-repeat;
+    overflow: hidden;
+    padding: 0;
 }
 
 .content{
     background-color: white;
     width: 700px;
-    height: 50vh;
+    height: 455px;
     margin: auto;
     margin-top: 50px;
     border-radius: 20px;
@@ -22,17 +28,22 @@ body{
 .contentTelaResultado, .teclado{
     background-color: #BDFFE9;
     width: 680px;
-    height: 10vh;
+    height: 93px;
     margin-top: 10px;
     margin-left: 10px;
     border-radius: 10px;
-    position: absolute;
+    position:absolute;
+}
+
+.teclado{
+    height: 335px;
+    margin-top: 110px;
 }
 
 .telaResultado{
     border: 1px solid #076445;
     margin: 0;
-    height: 9vh;
+    height: 83px;
     width: 660px;
     margin-top: 5px;
     margin-left:10px;
@@ -63,10 +74,6 @@ span{
     display: none;
 }
 
-.teclado{
-    height: 37vh;
-    margin-top: 12vh;
-}
 
 table{
     width:680px;
