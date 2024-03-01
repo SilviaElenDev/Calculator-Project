@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calc</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,123 +12,44 @@
             <div class="telaResultado">
                 <span class="calculo" >calculo</span>
                 <span class="ultimoResultado">ultimoResultado</span>
-                <div class="areaCalculoEResultado">0</div>
+                <p class="areaCalculoEResultado"></p>
             </div>
         </div>
         <div class="teclado">
             <table>
                 <tr>
-                    <td>
-                        <button class="caracters">
-                            (
-                        </button class="caracters">
-                    </td>
-                    <td>
-                        <button class="caracters">
-                            )
-                        </button class="caracters">
-                    </td>
-                    <td>
-                        <button class="caracters">
-                            %
-                        </button class="caracters">
-                    </td>
-                    <td>
-                        <button class="caracters">
-                            CE
-                        </button class="caracters">
-                    </td>
+                    <td><button onclick="insert('(')" class="caracters">(</button></td>
+                    <td><button onclick="insert(')')" class="caracters">)</button></td>
+                    <td><button onclick="clean()" class="caracters">Clean</button></td>
+                    <td><button onclick="cleanAll()" class="caracters">Clean All</button></td>
                 </tr>
                 <tr>
-                    <td>
-                        <button class="caracters">
-                            7
-                        </button class="caracters">
-                    </td>
-                    <td>
-                        <button class="caracters">
-                            8
-                        </button class="caracters">
-                    </td>
-                    <td>
-                        <button class="caracters">
-                            9
-                        </button class="caracters">
-                    </td>
-                    <td>
-                        <button class="caracters">
-                            /
-                        </button class="caracters">
-                    </td>
+                    <td><button onclick="insert('7')" class="caracters">7</button></td>
+                    <td><button onclick="insert('8')" class="caracters">8</button></td>
+                    <td><button onclick="insert('9')" class="caracters">9</button></td>
+                    <td><button onclick="insert('/')" class="caracters">/</button></td>
                 </tr>
                 <tr>
-                    <td>
-                        <button class="caracters">
-                            4
-                        </button class="caracters">
-                    </td>
-                    <td>
-                        <button class="caracters">
-                            5
-                        </button class="caracters">
-                    </td>
-                    <td>
-                        <button class="caracters">
-                            6
-                        </button class="caracters">
-                    </td>
-                    <td>
-                        <button class="caracters">
-                            x
-                        </button class="caracters">
-                    </td>
+                    <td><button onclick="insert('4')" class="caracters">4</button></td>
+                    <td><button onclick="insert('5')" class="caracters">5</button></td>
+                    <td><button onclick="insert('6')" class="caracters">6</button></td>
+                    <td><button onclick="insert('*')" class="caracters">x</button></td>
                 </tr>
                 <tr>
-                    <td>
-                        <button class="caracters">
-                            1
-                        </button class="caracters">
-                    </td>
-                    <td>
-                        <button class="caracters">
-                            2
-                        </button class="caracters">
-                    </td>
-                    <td>
-                        <button class="caracters">
-                            3
-                        </button class="caracters">
-                    </td>
-                    <td>
-                        <button class="caracters">
-                            -
-                        </button class="caracters">
-                    </td>
+                    <td><button onclick="insert('1')" class="caracters">1</button></td>
+                    <td><button onclick="insert('2')" class="caracters">2</button></td>
+                    <td><button onclick="insert('3')" class="caracters">3</button></td>
+                    <td><button onclick="insert('-')" class="caracters">-</button></td>
                 </tr>
                 <tr>
-                    <td>
-                        <button class="caracters">
-                            0
-                        </button class="caracters">
-                    </td>
-                    <td>
-                        <button class="caracters">
-                            .
-                        </button class="caracters">
-                    </td>
-                    <td>
-                        <button class="caracters">
-                            =
-                        </button class="caracters">
-                    </td>
-                    <td>
-                        <button class="caracters">
-                            +
-                        </button class="caracters">
-                    </td>
+                    <td><button onclick="insert('0')" class="caracters">0</button></td>
+                    <td><button onclick="insert('.')" class="caracters">.</button></td>
+                    <td><button onclick="calc()" class="caracters">=</button></td>
+                    <td><button onclick="insert('+')" class="caracters">+</button></td>
                 </tr>
             </table>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
