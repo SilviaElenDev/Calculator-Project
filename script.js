@@ -6,7 +6,7 @@ function insert(num){
 function calc(){
     let resultado =  document.querySelector('.areaCalculoEResultado').innerHTML;
 
-    const expressaoRegular =/^[\d\s]*([-+*/()][\d\s]*)+$/ ;
+       const expressaoRegular = /^[\d\s]*([-+*/]\s*)*[\d\s]*([eE][-+]?\d+\s*)*(.\d+)?([\d\s]*([-+*/]\s*)*[\d\s]*([eE][-+]?\d+\s*)*(.\d+)?[\d\s]*)*$/;
 
     if (expressaoRegular.test(resultado )){
         let ultimoResultado = document.querySelector('.areaCalculoEResultado').innerHTML = eval(resultado);
@@ -16,14 +16,15 @@ function calc(){
         setTimeout(() => {
         document.querySelector('.areaCalculoEResultado').innerHTML = "";
         },"1000");
-    }   
+    }
 }
 
+function cleanAll(){
+    document.querySelector('.areaCalculoEResultado').innerHTML = ""
+    document.querySelector('.ultimoResultado').innerHTML = ""
+}
 function clean(){
     let limparNumero =  document.querySelector('.areaCalculoEResultado').innerHTML;
     document.querySelector('.areaCalculoEResultado').innerHTML =limparNumero.substring(0, limparNumero.length -1 )
 }
 
-function cleanAll(){
-    document.querySelector('.areaCalculoEResultado').innerHTML = ""
-}
