@@ -5,11 +5,18 @@ function insert(num){
 
 function calc(){
     let resultado =  document.querySelector('.areaCalculoEResultado').innerHTML;
-    if (resultado){
-        document.querySelector('.areaCalculoEResultado').innerHTML = eval(resultado);
-    }else{
+
+    const expressaoRegular =/^[\d\s]*([-+*/()][\d\s]*)+$/ ;
+
+    if (expressaoRegular.test(resultado )){
+        let ultimoResultado = document.querySelector('.areaCalculoEResultado').innerHTML = eval(resultado);
+        var ultimoCalculo = document.querySelector('.ultimoResultado').innerHTML = `${resultado} = ${ultimoResultado}`;
+    } else {
         document.querySelector('.areaCalculoEResultado').innerHTML = "Insira seu calculo..."
-    }
+        setTimeout(() => {
+        document.querySelector('.areaCalculoEResultado').innerHTML = "";
+        },"1000");
+    }   
 }
 
 function clean(){
