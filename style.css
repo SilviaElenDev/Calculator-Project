@@ -48,30 +48,99 @@ body{
     margin-top: 5px;
     margin-left:10px;
     border-radius: 10px;
-    position: relative;
+    position:relative ;
     color: #076445;
 }
 
 .areaCalculoEResultado{
-    margin-top: 29px;
     border-radius: 10px;
     height: 50px;
     text-align: end;
     font-size: 40px;
     padding: 10px;
+    margin-top:31px ;
     overflow:hidden;
     white-space:nowrap;
 }
 
-span{
-    position: absolute;
-    right: 0;
-    border-radius: 10px;
-    font-size: 20px;
-    color: #076445;
-    padding-right: 10px;
+.historico{
+    position: relative;
+    margin-left: 40px;
+    padding-left: 10px;
+    display:none;
 }
 
+.calculosFeitos{
+    box-shadow: -10px 10px 20px black;
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    width: auto;
+    max-width:700px ;
+    height: auto;
+    max-height: 440px;
+    padding: 10px;
+    color: #fff;
+    z-index: 9999;
+    background-color:palevioletred;
+    overflow:auto;
+}
+
+.calculosFeitos::-webkit-scrollbar{
+    background-color: palevioletred;
+    width: 10px;
+    height: 10px;
+}
+
+.calculosFeitos::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.calculosFeitos::-webkit-scrollbar-corner{
+    background-color: palevioletred;
+}
+
+li{
+    line-height: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ultimoCalculo{
+    right: 0;
+    padding-right: 13px;
+    font-size: 20px;
+    position: absolute;
+    color: #076445;
+}
+.material-symbols-outlined{
+    padding-left: 2px;
+    padding-top:2px ;
+    left: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    color: #076445;
+}
+
+.material-symbols-outlined:hover{
+    color:#0fca8c;
+    font-size: 30px;
+}
 
 table{
     width:680px;

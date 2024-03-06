@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calc</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <div class="content">
         <div class="contentTelaResultado">
             <div class="telaResultado">
-                <span class="calculo"></span>
-                <span class="ultimoResultado"></span>
+                <span onclick="mostrarHistorico()" class="material-symbols-outlined">replay_10</span>
+                <div class="historico">
+                    <ul class="calculosFeitos">
+                        <p>Seus ultimos calculos, ficam aqui <3</p><br>
+                    </ul>
+                </div>
+                <span class="ultimoCalculo"></span>
                 <p class="areaCalculoEResultado"></p>
             </div>
         </div>
